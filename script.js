@@ -9,13 +9,26 @@ var numberList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // Prompt to confirm password length
 function generatePassword() {
-  var confirmLength = (prompt("Password Length (8 -128) characters"));
-  while(confirmLength <=7 || confirmLength >=128) {
-    alert("Password length must be between (8-128)characters");
-    var confirmLength = (prompt("How many characters would you like your password to contain?"));
+  var confirmLength = (prompt("Password Length (8 - 128) characters"));
+  console.log(confirmLength);
+  if (confirmLength >= 8 && confirmLength <= 128){
+    alert (`Your password will have ${confirmLength} characters`)
   }
-  alert(`Your password will have ${confirmLength} characters`);
-}
+  else {
+    alert ('Please choose a number between 8-128');
+    return;
+  }
+  // Confirm lower case
+  var confirmLowerCase = (confirm('Would you like lower cases?'))
+  // Confirm upper case
+  var confirmUpperCase = (confirm('Would you like upper cases?'))
+  // Confirm special cases
+  var confirmCharList = (confirm('Would you like special characters?'))
+  // Confirm numbers
+  var confirmNumber = (confirm('Would you like numbers?'))
+
+  //
+  }
 
 // Write password to the #password input
 function writePassword() {
