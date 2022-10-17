@@ -3,7 +3,7 @@
 # Description 
 
 # Screenshot
-![Alt Text]()
+![Alt Text](.assets/images/Password-Generator.png)
 
 # link
 https://arniezzy.github.io/Password-Generator/
