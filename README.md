@@ -1,9 +1,9 @@
 # Password-Generator
 
-# Description 
+## Description 
 
-# Screenshot
-![Alt Text](.assets/images/Password-Generator.png)
+## Screenshot
+![Alt Text](./assets/images/Password-Generator.png)
 
-# link
+## link
 https://arniezzy.github.io/Password-Generator/
