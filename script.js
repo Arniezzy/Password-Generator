@@ -10,7 +10,7 @@ var numberList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 // Prompt to confirm password length
 function generatePassword() {
   var passwordOptions = [];
-  var confirmLength = (prompt("Password Length (8 - 128) characters"));
+  var confirmLength = prompt("Password Length (8 - 128) characters");
   console.log(confirmLength);
   if (confirmLength >= 8 && confirmLength <= 128){
     alert (`Your password will have ${confirmLength} characters`)
@@ -28,7 +28,7 @@ function generatePassword() {
   // Confirm numbers
   var confirmNumber = (confirm('Would you like numbers?'));
 
-  // Conbined password options
+  // Combined password options
   if (confirmLowerCase) {
     passwordOptions = passwordOptions.concat(lowerCase);
   }
@@ -41,7 +41,14 @@ function generatePassword() {
   if (confirmNumber) {
     passwordOptions = passwordOptions.concat(numberList);
   }
-  return passwordOptions;
+  // 
+  var randomPassword = "";
+
+  for (var i = 0; i < confirmLength; i++){
+    randomPassword = randomPassword + passwordOptions[Math.floor(Math.random() * passwordOptions.length)];
+  }
+
+  return randomPassword;
 }
 
 // Write password to the #password input

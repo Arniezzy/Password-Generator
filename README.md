@@ -1,2 +1,9 @@
 # Password-Generator
-HW 3 Password Generator
+
+# Description 
+
+# Screenshot
+![Alt Text]()
+
+# link
+https://arniezzy.github.io/Password-Generator/
