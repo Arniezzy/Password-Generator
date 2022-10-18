@@ -11,7 +11,6 @@ var numberList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 function generatePassword() {
   var passwordOptions = [];
   var confirmLength = prompt("Password Length (8 - 128) characters");
-  console.log(confirmLength);
   if (confirmLength >= 8 && confirmLength <= 128){
     alert (`Your password will have ${confirmLength} characters`)
   }
